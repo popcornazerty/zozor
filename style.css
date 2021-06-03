@@ -1,0 +1,234 @@
+
+
+@font-face {
+    font-family: 'ballpark';
+    src:url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+    url('polices/ballpark.ttf') format('truetype'),
+    url('Polices/ballpark.woff') format('woff'),
+    url('polices/ballpark.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dayroom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+    url('polices/dayrom.ttf') format('truetype'),
+    url('polices/dayrom.woff') format('woff'),
+    url('polices/dayrom.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+  background-image: url('images/fond_jaune.png');
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #181818;
+    
+}
+
+#bloc_page
+{
+width:70%;
+margin:auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: 'dayrom', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+header
+{
+    background:url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /*what for?*/
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1 {
+  font-family: 'ballparkweiner', serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0 0 0 10px; 
+}
+
+header h2 {
+    font-family:'dayrom', serif;
+    font-size: 1.1em;
+    font-weight:normal;
+    margin-top: 0px;
+}
+
+#navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+#navigation a {
+    display: block;
+    padding: 0.2em;
+  }
+
+nav a
+{
+font-size: 1.3em;
+color: #181818;
+padding-bottom: 3px;
+text-decoration: none;
+}
+/*what for? */
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+/*Bannière*/
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+
+#banniere_description
+{
+    position:absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 4px;
+    background: rgba(24, 23, 23, 0.8);
+    color: white;
+    font-size: 0.8em;
+}
+/* Corps*/
+
+section
+{
+    display: flex;
+    
+  
+}
+
+article, aside
+{
+    text-align:justify;
+}
+
+article
+{
+    margin-right: 25px;
+/*rajouter flex*/
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+article p
+{
+  font-size: 0.8em;  
+}
+
+
+
+
+footer
+{
+display: flex;
+background:url(images/ico_top.png) no-repeat top center,
+url(images/separateur.png) repeat-x top, url(images/ombres/png) repeat-x top;
+padding-top:25px;
+}
+
+footer h1
+{
+    font-size: 0.8em;
+}
+/*pourquoi ça marche pas?
+#tweet, #mes_photos, #mes_amis
+{
+  justify-content: space-between;  
+}
+*/
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+#mes_amis
+{
+    width: 20%;
+}
+
+
+#mes_photos img
+{
+border: 1px solid #181818;
+margin-right: 2px;
+}
+
+
+#listes_amis
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+/* pourquoi ce n'est pas dans l'id listes_amis pluto que mes_amis?*/
+#mes_amis ul
+{
+    list-style-image: image('ico_liensexterne.png');
+    
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    
+}
